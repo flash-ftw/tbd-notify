@@ -1,0 +1,30 @@
+{
+  "subscriptions": {
+    "753591274338123866": [
+      "minotaurs",
+      "gobsonape",
+      "goodvibesclub"
+    ],
+    "845390906085081099": [
+      "veefriends-series-2"
+    ]
+  },
+  "eventFilters": {
+    "292315753158410240": [
+      "item_sold",
+      "item_listed",
+      "item_transferred",
+      "item_received_offer",
+      "item_received_bid",
+      "item_metadata_updated",
+      "item_cancelled"
+    ],
+    "753591274338123866": [
+      "item_sold"
+    ],
+    "845390906085081099": [
+      "item_listed",
+      "item_sold"
+    ]
+  }
+}

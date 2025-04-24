@@ -1,0 +1,657 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+payload_examples
+Item Listed Payload
+{
+   "event":"item_listed",
+   "sent_at":"2022-12-01T16:54:24.212517+00:00",
+   "payload":{
+      "event_type":"item_listed",
+      "payload":{
+         "base_price":"5000000000000000",
+         "collection":{
+            "slug":"boredfrens"
+         },
+         "event_timestamp":"2022-12-01T16:54:23.974726+00:00",
+         "expiration_date":"2022-12-02T16:54:22.000000+00:00",
+         "is_private":false,
+         "item":{
+            "chain":{
+               "name":"ethereum"
+            },
+            "metadata":{
+               "animation_url":null,
+               "image_url":"https://i.seadn.io/gae/6X_iRBPw33gDSZFlHxBBs6pSfQU8Z8c1ECpRV_Nru-fDvO6ORUky5GhpXeAtTR2ZNvkf8vElpW5-4NbdVOBOPr3aF1P_1Z-Mid6LLF8?w=500&auto=format",
+               "metadata_url":null,
+               "name":"Devil Frens #18682"
+            },
+            "nft_id":"ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/74630152366364009569833059154376861594951644105207272687495389092116791558145",
+            "permalink":"https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/74630152366364009569833059154376861594951644105207272687495389092116791558145"
+         },
+         "listing_date":"2022-12-01T16:54:22.000000+00:00",
+         "listing_type":null,
+         "maker":{
+            "address":"0xa4ff2b59d72f76ee51051196d25e3998cdc579c6"
+         },
+         "order_hash":"0xccbf2c8bc22d06fc16e118e5a865377d8b2fe4ea485cd0cb713899cca17d8964",
+         "payment_token":{
+            "address":"0x0000000000000000000000000000000000000000",
+            "decimals":18,
+            "eth_price":"1.000000000000000",
+            "name":"Ether",
+            "symbol":"ETH",
+            "usd_price":"1287.160000000000082000"
+         },
+         "protocol_data":{
+            "parameters":{
+               "conduitKey":"0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+               "consideration":[
+                  {
+                     "endAmount":4375000000000000,
+                     "identifierOrCriteria":0,
+                     "itemType":0,
+                     "recipient":"0xa4fF2b59D72f76eE51051196D25e3998CDC579c6",
+                     "startAmount":4375000000000000,
+                     "token":"0x0000000000000000000000000000000000000000"
+                  },
+                  {
+                     "endAmount":125000000000000,
+                     "identifierOrCriteria":0,
+                     "itemType":0,
+                     "recipient":"0x0000a26b00c1F0DF003000390027140000fAa719",
+                     "startAmount":125000000000000,
+                     "token":"0x0000000000000000000000000000000000000000"
+                  },
+                  {
+                     "endAmount":500000000000000,
+                     "identifierOrCriteria":0,
+                     "itemType":0,
+                     "recipient":"0xa7d5053684Aa3BbD60A6473fC97B5942E35020b7",
+                     "startAmount":500000000000000,
+                     "token":"0x0000000000000000000000000000000000000000"
+                  }
+               ],
+               "counter":0,
+               "endTime":1670000062,
+               "offer":[
+                  {
+                     "endAmount":1,
+                     "identifierOrCriteria":7.463015236636401e+76,
+                     "itemType":3,
+                     "startAmount":1,
+                     "token":"0xA604060890923Ff400e8c6f5290461A83AEDACec"
+                  }
+               ],
+               "offerer":"0xa4fF2b59D72f76eE51051196D25e3998CDC579c6",
+               "orderType":3,
+               "salt":9.481733903281769e+37,
+               "startTime":1669913662,
+               "totalOriginalConsiderationItems":3,
+               "zone":"0x004C00500000aD104D7DBd00e3ae0A5C00560C00",
+               "zoneHash":"0x3000000000000000000000000000000000000000000000000000000000000000"
+            },
+            "signature":"0xd45d9cf39dc06cbd5c6b5419bf959f0a33e8d6ba3bec0891825f3e126ff1fc5d55b80c8c642e542cdb76c93f3886fd0de1f2254f32a08f06d655ebd58c359f53",
+            "use_lazy_mint_adapter_for_shared_storefront":true
+         },
+         "quantity":1,
+         "taker":null
+      },
+   }
+}
+
+
+Item Sold Payload
+{
+   "event":"item_sold",
+   "sent_at":"2022-12-01T16:54:27.741979+00:00",
+   "payload":{
+      "event_type":"item_sold",
+      "payload":{
+         "closing_date":"2022-12-01T16:54:23.000000+00:00",
+         "collection":{
+            "slug":"sneakerheadsofficial"
+         },
+         "event_timestamp":"2022-12-01T16:54:23.000000+00:00",
+         "is_private":false,
+         "item":{
+            "chain":{
+               "name":"ethereum"
+            },
+            "metadata":{
+               "animation_url":null,
+               "image_url":"https://i.seadn.io/gae/7k408lJucpd0xYOlfvucW50zsXfa53YvdhsRZ_Y_mkmR1mUcNxPKoUphLbgHjLE7-qd5fvnYKBkyGxPsIyV2zQhLy2jjH4KVr8gqeg?w=500&auto=format",
+               "metadata_url":"https://api.sneakerheads.xyz/sneaker/3884",
+               "name":"SNEAKERHEADS #3884"
+            },
+            "nft_id":"ethereum/0x8dc7b6ec6fafa36085ee9ec8e39112428d3360aa/3884",
+            "permalink":"https://opensea.io/assets/ethereum/0x8dc7b6ec6fafa36085ee9ec8e39112428d3360aa/3884"
+         },
+         "listing_type":null,
+         "maker":{
+            "address":"0x16ce6c6662510faf7c34bb1406fd8c20641db9e3"
+         },
+         "order_hash":"0x2fba6c445b08e38e013a96463b69242cfed5b41459a9635fed28eff3809ce9b8",
+         "payment_token":{
+            "address":"0x0000000000000000000000000000000000000000",
+            "decimals":18,
+            "eth_price":"1.000000000000000",
+            "name":"Ether",
+            "symbol":"ETH",
+            "usd_price":"1287.160000000000082000"
+         },
+         "protocol_data":{
+            "parameters":{
+               "conduitKey":"0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+               "consideration":[
+                  {
+                     "endAmount":138750000000000000,
+                     "identifierOrCriteria":0,
+                     "itemType":0,
+                     "recipient":"0x16Ce6c6662510faF7C34bb1406fd8c20641db9E3",
+                     "startAmount":138750000000000000,
+                     "token":"0x0000000000000000000000000000000000000000"
+                  },
+                  {
+                     "endAmount":3750000000000000,
+                     "identifierOrCriteria":0,
+                     "itemType":0,
+                     "recipient":"0x0000a26b00c1F0DF003000390027140000fAa719",
+                     "startAmount":3750000000000000,
+                     "token":"0x0000000000000000000000000000000000000000"
+                  },
+                  {
+                     "endAmount":7500000000000000,
+                     "identifierOrCriteria":0,
+                     "itemType":0,
+                     "recipient":"0x025B188919DC10b42aE5bC85134300628F834E96",
+                     "startAmount":7500000000000000,
+                     "token":"0x0000000000000000000000000000000000000000"
+                  }
+               ],
+               "counter":0,
+               "endTime":1671471291,
+               "offer":[
+                  {
+                     "endAmount":1,
+                     "identifierOrCriteria":3884,
+                     "itemType":2,
+                     "startAmount":1,
+                     "token":"0x8dC7b6EC6FafA36085EE9ec8e39112428D3360aa"
+                  }
+               ],
+               "offerer":"0x16Ce6c6662510faF7C34bb1406fd8c20641db9E3",
+               "orderType":2,
+               "salt":2.444686030276174e+76,
+               "startTime":1669555611,
+               "totalOriginalConsiderationItems":3,
+               "zone":"0x004C00500000aD104D7DBd00e3ae0A5C00560C00",
+               "zoneHash":"0x0000000000000000000000000000000000000000000000000000000000000000"
+            },
+            "signature":"0x"
+         },
+         "quantity":1,
+         "sale_price":"150000000000000000",
+         "taker":{
+            "address":"0xa16f1cba10737adff9b7ed6f12bd3fcfe93c2d8e"
+         },
+         "transaction":{
+            "hash":"0x27b04793393f06f5529bed99bfb35f8af2487a478a7ace121ebc1f057c77c6b1",
+            "timestamp":"2022-12-01T16:54:23.000000+00:00"
+         }
+      },
+   },
+}
+
+Item Transferred Payload
+{
+   "event":"item_transferred",
+    "sent_at":"2022-12-01T16:54:22.678783+00:00",
+   "payload":{
+      "event_type":"item_transferred",
+      "payload":{
+         "collection":{
+            "slug":"nekozuma-eth"
+         },
+         "event_timestamp":"2022-12-01T16:54:22.483931+00:00",
+         "from_account":{
+            "address":"0x0000000000000000000000000000000000000000"
+         },
+         "item":{
+            "chain":{
+               "name":"ethereum"
+            },
+            "metadata":{
+               "animation_url":null,
+               "image_url":"https://i.seadn.io/gae/Ru9zC_9EwLdxjXTau9SpwkRFlSYoV635M2q1hDp6BTOBQnsWlWRp0ZRJ5dWS2A0HVgb7ix38M8ywrCrjLj9blCbuDivi1qtNt6CV87w?w=500&auto=format",
+               "metadata_url":null,
+               "name":"Nekozuma #8484"
+            },
+            "nft_id":"ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/91577084333317265455693574180089203123053062749515767918158455086200710496257",
+            "permalink":"https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/91577084333317265455693574180089203123053062749515767918158455086200710496257"
+         },
+         "quantity":1,
+         "to_account":{
+            "address":"0xca76cafcb62c22f9c59a36287f0a6e0979834e04"
+         },
+         "transaction":null
+      }
+   },
+}
+
+Item Metadata Update Payload
+{
+	"event_type": "item_metadata_updated",
+	"sent_at": "2022-04-25T23:32:14.486643+00:00",
+	"payload": {
+		"name": "Doodle #222",
+		"description": "A community-driven collectibles project featuring art by Burnt Toast. Doodles come...",
+		"image_preview_url": "https://lh3.googleusercontent.com/R7wtoDNdmM7GhTvVjr4JGA6q60z44Hn2nIymPjAEXcjnD8oBPxQYPA1GkrCnvepPM1Sc8DlIHZql4Yucj4ger1jnWmxmuRFwIC_JRw",
+		"animation_url": null,
+		"background_color": "#000000",
+		"metadata_url": "https://opensea.mypinata.cloud/ipfs/QmPMc4tcBsMqLRuCQtPmPe84bpSjrC3Ky7t3JWuHXYB4aS/222",
+		"traits": []
+	}
+}
+
+Item Cancelled Payload
+{
+	"event_type": "item_cancelled",
+	"sent_at": "2022-04-25T23:32:14.486643+00:00",
+	"payload": {
+		"base_price": "24840000000000000000",
+		"event_timestamp": "2022-04-21T16:46:46.240222+00:00",
+		"expiration_date": "2022-05-17T04:36:50.000000+00:00",
+		"is_private": false,
+		"listing_date": "2022-04-21T17:10:54.000000+00:00",
+		"listing_type": null,
+		"maker": { "address": "0xc4b08a8009763dab8c2fb44a59d8f1c23e8c11e5" },
+                 "order_hash": "0xe7385bf786154848873d89e0b4e2e03406e396ee9d3cb4da47f801f719c0a792",
+		"payment_token": {
+		  "address": "0x0000000000000000000000000000000000000000",
+		  "decimals": 18,
+		  "eth_price": "1",
+		  "name": "Ether",
+		  "symbol": "ETH",
+		  "usd_price": "3070.02"
+		},
+		"quantity": 1,
+		"taker": null,
+		"transaction": {
+		  "hash": "0x5220ed591129adca7bac908b135a14fa1c88ee190cee9e88324c6af8f7c693e3",
+		  "timestamp": "2022-04-21T18:51:43.000000+00:00"
+		}
+	}
+
+}
+
+Item Received Offer Payload
+{
+   "event":"item_received_offer",
+    "sent_at":"2022-12-01T16:09:45.682302+00:00",
+   "payload":{
+      "event_type":"item_received_bid",
+      "payload":{
+         "base_price":"6700000000000000000",
+         "collection":{
+            "slug":"doodles-official"
+         },
+         "created_date":"2022-12-01T16:06:02.000000+00:00",
+         "event_timestamp":"2022-12-01T16:09:45.323409+00:00",
+         "expiration_date":"2022-12-01T18:05:57.000000+00:00",
+         "item":{
+            "chain":{
+               "name":"ethereum"
+            },
+            "metadata":{
+               "animation_url":null,
+               "image_url":"https://i.seadn.io/gae/vN4OHaxW-8w20AvXuV6ivA-mxVa65lyfNeqJnUZGh-XGfDaQ47t2YHTwPlBLsjPKF1SUlLu5ecEfY1IlC1kZvL8rMDArkId2ICXKgxI?w=500&auto=format",
+               "metadata_url":"https://opensea.mypinata.cloud/ipfs/QmPMc4tcBsMqLRuCQtPmPe84bpSjrC3Ky7t3JWuHXYB4aS/5470",
+               "name":"Doodle #5470"
+            },
+            "nft_id":"ethereum/0x8a90cab2b38dba80c64b7734e58ee1db38b8992e/5470",
+            "permalink":"https://opensea.io/assets/ethereum/0x8a90cab2b38dba80c64b7734e58ee1db38b8992e/5470"
+         },
+         "maker":{
+            "address":"0xd71d23b29d7ba769c0d9d96c35ec4360e7009208"
+         },
+         "order_hash":"0x517c578fbd8b1c62fd082a8ac36505c663125a130df4f348100ef092142e0696",
+         "payment_token":{
+            "address":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "decimals":18,
+            "eth_price":"1.000000000000000",
+            "name":"Wrapped Ether",
+            "symbol":"WETH",
+            "usd_price":"1215.779999999999973000"
+         },
+         "protocol_data":{
+            "parameters":{
+               "conduitKey":"0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+               "consideration":[
+                  {
+                     "endAmount":1,
+                     "identifierOrCriteria":5470,
+                     "itemType":2,
+                     "recipient":"0xD71D23b29d7BA769C0D9D96c35ec4360e7009208",
+                     "startAmount":1,
+                     "token":"0x8a90CAb2b38dba80c64b7734e58Ee1dB38B8992e"
+                  },
+                  {
+                     "endAmount":167500000000000000,
+                     "identifierOrCriteria":0,
+                     "itemType":1,
+                     "recipient":"0x0000a26b00c1F0DF003000390027140000fAa719",
+                     "startAmount":167500000000000000,
+                     "token":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                  },
+                  {
+                     "endAmount":335000000000000000,
+                     "identifierOrCriteria":0,
+                     "itemType":1,
+                     "recipient":"0xd1F124cc900624e1ff2d923180b3924147364380",
+                     "startAmount":335000000000000000,
+                     "token":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                  }
+               ],
+               "counter":4,
+               "endTime":1669917957,
+               "offer":[
+                  {
+                     "endAmount":6700000000000000000,
+                     "identifierOrCriteria":0,
+                     "itemType":1,
+                     "startAmount":6700000000000000000,
+                     "token":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                  }
+               ],
+               "offerer":"0xD71D23b29d7BA769C0D9D96c35ec4360e7009208",
+               "orderType":3,
+               "salt":1.6131127139061878e+38,
+               "startTime":1669910762,
+               "totalOriginalConsiderationItems":3,
+               "zone":"0x004C00500000aD104D7DBd00e3ae0A5C00560C00",
+               "zoneHash":"0x3400000000000000000000000000000000000000000000000000000000000000"
+            },
+            "signature":"0xe65c22e99dbde18697bb2a1c90b867f3fbb510004a3b040f945f182bf5fa7b6d770f99b31de68eebc68f1a813073ad2245d05b42ffd12787a33a3466dd409dd9"
+         },
+         "quantity":1,
+         "taker":null
+      }
+}
+
+Item Received Bid Payload
+{
+   "event":"item_received_bid",
+    "sent_at":"2022-12-01T16:09:45.682302+00:00",
+   "payload":{
+      "event_type":"item_received_bid",
+      "payload":{
+         "base_price":"6700000000000000000",
+         "collection":{
+            "slug":"doodles-official"
+         },
+         "created_date":"2022-12-01T16:06:02.000000+00:00",
+         "event_timestamp":"2022-12-01T16:09:45.323409+00:00",
+         "expiration_date":"2022-12-01T18:05:57.000000+00:00",
+         "item":{
+            "chain":{
+               "name":"ethereum"
+            },
+            "metadata":{
+               "animation_url":null,
+               "image_url":"https://i.seadn.io/gae/vN4OHaxW-8w20AvXuV6ivA-mxVa65lyfNeqJnUZGh-XGfDaQ47t2YHTwPlBLsjPKF1SUlLu5ecEfY1IlC1kZvL8rMDArkId2ICXKgxI?w=500&auto=format",
+               "metadata_url":"https://opensea.mypinata.cloud/ipfs/QmPMc4tcBsMqLRuCQtPmPe84bpSjrC3Ky7t3JWuHXYB4aS/5470",
+               "name":"Doodle #5470"
+            },
+            "nft_id":"ethereum/0x8a90cab2b38dba80c64b7734e58ee1db38b8992e/5470",
+            "permalink":"https://opensea.io/assets/ethereum/0x8a90cab2b38dba80c64b7734e58ee1db38b8992e/5470"
+         },
+         "maker":{
+            "address":"0xd71d23b29d7ba769c0d9d96c35ec4360e7009208"
+         },
+         "order_hash":"0x517c578fbd8b1c62fd082a8ac36505c663125a130df4f348100ef092142e0696",
+         "payment_token":{
+            "address":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "decimals":18,
+            "eth_price":"1.000000000000000",
+            "name":"Wrapped Ether",
+            "symbol":"WETH",
+            "usd_price":"1215.779999999999973000"
+         },
+         "protocol_data":{
+            "parameters":{
+               "conduitKey":"0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+               "consideration":[
+                  {
+                     "endAmount":1,
+                     "identifierOrCriteria":5470,
+                     "itemType":2,
+                     "recipient":"0xD71D23b29d7BA769C0D9D96c35ec4360e7009208",
+                     "startAmount":1,
+                     "token":"0x8a90CAb2b38dba80c64b7734e58Ee1dB38B8992e"
+                  },
+                  {
+                     "endAmount":167500000000000000,
+                     "identifierOrCriteria":0,
+                     "itemType":1,
+                     "recipient":"0x0000a26b00c1F0DF003000390027140000fAa719",
+                     "startAmount":167500000000000000,
+                     "token":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                  },
+                  {
+                     "endAmount":335000000000000000,
+                     "identifierOrCriteria":0,
+                     "itemType":1,
+                     "recipient":"0xd1F124cc900624e1ff2d923180b3924147364380",
+                     "startAmount":335000000000000000,
+                     "token":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                  }
+               ],
+               "counter":4,
+               "endTime":1669917957,
+               "offer":[
+                  {
+                     "endAmount":6700000000000000000,
+                     "identifierOrCriteria":0,
+                     "itemType":1,
+                     "startAmount":6700000000000000000,
+                     "token":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                  }
+               ],
+               "offerer":"0xD71D23b29d7BA769C0D9D96c35ec4360e7009208",
+               "orderType":3,
+               "salt":1.6131127139061878e+38,
+               "startTime":1669910762,
+               "totalOriginalConsiderationItems":3,
+               "zone":"0x004C00500000aD104D7DBd00e3ae0A5C00560C00",
+               "zoneHash":"0x3400000000000000000000000000000000000000000000000000000000000000"
+            },
+            "signature":"0xe65c22e99dbde18697bb2a1c90b867f3fbb510004a3b040f945f182bf5fa7b6d770f99b31de68eebc68f1a813073ad2245d05b42ffd12787a33a3466dd409dd9"
+         },
+         "quantity":1,
+         "taker":null
+      }
+}
+
+Collection Offer Payload
+{
+   "event_type":"collection_offer",
+   "sent_at":"2022-12-01T16:09:23.287500+00:00",
+   "payload":{
+      "asset_contract_criteria":{
+         "address":"0x8a90cab2b38dba80c64b7734e58ee1db38b8992e"
+      },
+      "base_price":"6055100000000000000",
+      "collection":{
+         "slug":"doodles-official"
+      },
+      "collection_criteria":{
+         "slug":"doodles-official"
+      },
+      "created_date":"2022-12-01T16:09:22.000000+00:00",
+      "event_timestamp":"2022-12-01T16:09:22.951285+00:00",
+      "expiration_date":"2022-12-01T16:25:22.000000+00:00",
+      "item":{
+         
+      },
+      "maker":{
+         "address":"0xc1bb39ba8ab14b37d4dd59c457042f639dfef95d"
+      },
+      "order_hash":"0xde046c3273a8811e32a52de3b2c705366e67e27115793382c84ef865fc36d941",
+      "payment_token":{
+         "address":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+         "decimals":18,
+         "eth_price":"1.000000000000000",
+         "name":"Wrapped Ether",
+         "symbol":"WETH",
+         "usd_price":"1215.779999999999973000"
+      },
+      "protocol_data":{
+         "parameters":{
+            "conduitKey":"0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+            "consideration":[
+               {
+                  "endAmount":1,
+                  "identifierOrCriteria":1.0479044511256843e+77,
+                  "itemType":4,
+                  "recipient":"0xC1BB39bA8aB14b37d4dD59C457042F639dfef95d",
+                  "startAmount":1,
+                  "token":"0x8a90CAb2b38dba80c64b7734e58Ee1dB38B8992e"
+               },
+               {
+                  "endAmount":151377500000000000,
+                  "identifierOrCriteria":0,
+                  "itemType":1,
+                  "recipient":"0x0000a26b00c1F0DF003000390027140000fAa719",
+                  "startAmount":151377500000000000,
+                  "token":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+               },
+               {
+                  "endAmount":302755000000000000,
+                  "identifierOrCriteria":0,
+                  "itemType":1,
+                  "recipient":"0xd1F124cc900624e1ff2d923180b3924147364380",
+                  "startAmount":302755000000000000,
+                  "token":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+               }
+            ],
+            "counter":0,
+            "endTime":1669911922,
+            "offer":[
+               {
+                  "endAmount":6055100000000000000,
+                  "identifierOrCriteria":0,
+                  "itemType":1,
+                  "startAmount":6055100000000000000,
+                  "token":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+               }
+            ],
+            "offerer":"0xC1BB39bA8aB14b37d4dD59C457042F639dfef95d",
+            "orderType":2,
+            "salt":6.054751888727945e+36,
+            "startTime":1669910962,
+            "totalOriginalConsiderationItems":3,
+            "zone":"0x004C00500000aD104D7DBd00e3ae0A5C00560C00",
+            "zoneHash":"0x0000000000000000000000000000000000000000000000000000000000000000"
+         },
+         "signature":"0xbff7067712a3f13d3e81a39f076c62adbb0a4e23d3e0f5634fb7b6a130c0a63c7b26f818240d464bfb84109ca8786a3eaef5c2ee1b416d974ed013e63a1c911f1b"
+      },
+      "quantity":1,
+      "taker":null
+   }
+}
+
+Trait Offer Payload
+{
+   "event_type":"trait_offer",
+   "sent_at":"2022-12-01T16:09:09.819426+00:00",
+   "payload":{
+      "asset_contract_criteria":{
+         "address":"0x8a90cab2b38dba80c64b7734e58ee1db38b8992e"
+      },
+      "base_price":"6765100000000000000",
+      "collection":{
+         "slug":"doodles-official"
+      },
+      "collection_criteria":{
+         "slug":"doodles-official"
+      },
+      "created_date":"2022-12-01T16:09:05.000000+00:00",
+      "event_timestamp":"2022-12-01T16:09:09.698051+00:00",
+      "expiration_date":"2022-12-01T16:38:56.000000+00:00",
+      "item":{
+         
+      },
+      "maker":{
+         "address":"0xca9c5d7be1ab0e85791682234873445e0cdff91a"
+      },
+      "order_hash":"0x3fd21a47a5de18c9ec2adfb5ae902586a03a2171014e90dfa7ea1d1baa91277c",
+      "payment_token":{
+         "address":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+         "decimals":18,
+         "eth_price":"1.000000000000000",
+         "name":"Wrapped Ether",
+         "symbol":"WETH",
+         "usd_price":"1215.779999999999973000"
+      },
+      "protocol_data":{
+         "parameters":{
+            "conduitKey":"0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+            "consideration":[
+               {
+                  "endAmount":1,
+                  "identifierOrCriteria":1.0153774396642053e+77,
+                  "itemType":4,
+                  "recipient":"0xcA9C5D7Be1aB0e85791682234873445e0CDfF91a",
+                  "startAmount":1,
+                  "token":"0x8a90CAb2b38dba80c64b7734e58Ee1dB38B8992e"
+               },
+               {
+                  "endAmount":169127500000000000,
+                  "identifierOrCriteria":0,
+                  "itemType":1,
+                  "recipient":"0x0000a26b00c1F0DF003000390027140000fAa719",
+                  "startAmount":169127500000000000,
+                  "token":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+               },
+               {
+                  "endAmount":338255000000000000,
+                  "identifierOrCriteria":0,
+                  "itemType":1,
+                  "recipient":"0xd1F124cc900624e1ff2d923180b3924147364380",
+                  "startAmount":338255000000000000,
+                  "token":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+               }
+            ],
+            "counter":0,
+            "endTime":1669912736,
+            "offer":[
+               {
+                  "endAmount":6765100000000000000,
+                  "identifierOrCriteria":0,
+                  "itemType":1,
+                  "startAmount":6765100000000000000,
+                  "token":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+               }
+            ],
+            "offerer":"0xcA9C5D7Be1aB0e85791682234873445e0CDfF91a",
+            "orderType":2,
+            "salt":2.444686030276174e+76,
+            "startTime":1669910945,
+            "totalOriginalConsiderationItems":3,
+            "zone":"0x004C00500000aD104D7DBd00e3ae0A5C00560C00",
+            "zoneHash":"0x0000000000000000000000000000000000000000000000000000000000000000"
+         },
+         "signature":"0xfcf9251daed3f056a2f493e84e45fee453238a366b8743b94e93e7f99354c9164c67b83cc153b627f3821497f9efb80293e264d4c085d0da0da4f005a08d8f0a1b"
+      },
+      "quantity":1,
+      "taker":null,
+      "trait_criteria":{
+         "trait_name":"airpod",
+         "trait_type":"piercing"
+      }
+   }
+}
+
