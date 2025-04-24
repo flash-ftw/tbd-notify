@@ -502,6 +502,15 @@ function createEmbed(event) {
             url: collectionUrl,
             iconURL: payload.collection.image_url
         });
+
+        // Add floor price for collection
+        if (payload.collection.stats?.floor_price) {
+            embed.addFields({
+                name: 'Floor Price',
+                value: `${formatPrice(payload.collection.stats.floor_price)} ETH`,
+                inline: true
+            });
+        }
     }
 
     // Add token information
@@ -520,6 +529,11 @@ function createEmbed(event) {
         if (contractAddress) {
             description += `\nContract: \`${contractAddress}\``;
         }
+
+        // Add rarity rank if available
+        if (payload.item.rarity_data?.rank) {
+            description += `\nRarity Rank: #${payload.item.rarity_data.rank}`;
+        }
         
         embed.setDescription(description);
         
@@ -529,6 +543,72 @@ function createEmbed(event) {
         
         if (tokenUrl) {
             embed.setURL(tokenUrl);
+        }
+    }
+
+    // Add event-specific fields
+    if (event.event === 'item_listed') {
+        // Add listing price
+        if (payload.base_price) {
+            embed.addFields({
+                name: 'Listing Price',
+                value: `${formatPrice(payload.base_price)} ETH`,
+                inline: true
+            });
+        }
+
+        // Add listing duration/expiration
+        if (payload.expiration_date) {
+            const expirationDate = new Date(payload.expiration_date);
+            embed.addFields({
+                name: 'Expires',
+                value: `<t:${Math.floor(expirationDate.getTime() / 1000)}:R>`,
+                inline: true
+            });
+        }
+
+        // Add seller information
+        if (payload.maker) {
+            embed.addFields({
+                name: 'Seller',
+                value: `[${formatAddress(payload.maker)}](https://opensea.io/${payload.maker})`,
+                inline: true
+            });
+        }
+    } else if (event.event === 'item_sold') {
+        // Add sale price
+        if (payload.sale_price) {
+            embed.addFields({
+                name: 'Sale Price',
+                value: `${formatPrice(payload.sale_price)} ETH`,
+                inline: true
+            });
+        }
+
+        // Add transaction timestamp
+        if (payload.transaction) {
+            const txDate = new Date(payload.transaction.timestamp);
+            embed.addFields({
+                name: 'Sold',
+                value: `<t:${Math.floor(txDate.getTime() / 1000)}:R>`,
+                inline: true
+            });
+        }
+
+        // Add buyer and seller information
+        if (payload.maker) {
+            embed.addFields({
+                name: 'Seller',
+                value: `[${formatAddress(payload.maker)}](https://opensea.io/${payload.maker})`,
+                inline: true
+            });
+        }
+        if (payload.taker) {
+            embed.addFields({
+                name: 'Buyer',
+                value: `[${formatAddress(payload.taker)}](https://opensea.io/${payload.taker})`,
+                inline: true
+            });
         }
     }
 
@@ -562,8 +642,60 @@ function createEmbed(event) {
         components.push(urlButtonRow);
     }
 
-    // Second row for customId buttons
-    const customButtonRow = new ActionRowBuilder()
+    // Second row for profile and action buttons
+    const profileButtonRow = new ActionRowBuilder();
+
+    // Add profile buttons based on event type
+    if (event.event === 'item_listed') {
+        if (payload.maker) {
+            profileButtonRow.addComponents(
+                new ButtonBuilder()
+                    .setLabel('View Seller')
+                    .setStyle(ButtonStyle.Link)
+                    .setURL(`https://opensea.io/${payload.maker}`)
+            );
+        }
+    } else if (event.event === 'item_sold') {
+        if (payload.maker) {
+            profileButtonRow.addComponents(
+                new ButtonBuilder()
+                    .setLabel('View Seller')
+                    .setStyle(ButtonStyle.Link)
+                    .setURL(`https://opensea.io/${payload.maker}`)
+            );
+        }
+        if (payload.taker) {
+            profileButtonRow.addComponents(
+                new ButtonBuilder()
+                    .setLabel('View Buyer')
+                    .setStyle(ButtonStyle.Link)
+                    .setURL(`https://opensea.io/${payload.taker}`)
+            );
+        }
+    }
+
+    // Add action buttons for listings
+    if (event.event === 'item_listed' && payload.item?.permalink) {
+        profileButtonRow.addComponents(
+            new ButtonBuilder()
+                .setLabel('Make Offer')
+                .setStyle(ButtonStyle.Link)
+                .setURL(`${payload.item.permalink}/offers`)
+        );
+        profileButtonRow.addComponents(
+            new ButtonBuilder()
+                .setLabel('Buy Now')
+                .setStyle(ButtonStyle.Link)
+                .setURL(payload.item.permalink)
+        );
+    }
+
+    if (profileButtonRow.components.length > 0) {
+        components.push(profileButtonRow);
+    }
+
+    // Third row for collections management
+    const collectionsButtonRow = new ActionRowBuilder()
         .addComponents(
             new ButtonBuilder()
                 .setCustomId('view_collections')
@@ -572,7 +704,7 @@ function createEmbed(event) {
                 .setEmoji('📋')
         );
 
-    components.push(customButtonRow);
+    components.push(collectionsButtonRow);
 
     return { embed, components };
 }
